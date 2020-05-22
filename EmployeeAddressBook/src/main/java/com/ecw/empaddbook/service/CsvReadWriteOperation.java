@@ -27,6 +27,7 @@ public class CsvReadWriteOperation {
 	String splitChar = ",";
 
 	public List<Employee> getAllEmployee() {
+		System.out.println("ashish");
 		List<Employee> empList = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(csvFileName))) {
 			while ((line = br.readLine()) != null) {
